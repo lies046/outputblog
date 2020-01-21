@@ -2,7 +2,7 @@
   .content__left
     .content__left--image
       - if post.image.present?
-        -# = image_tag post.image(:thumb)  #_url削除
+        = image_tag post.image.url(:thumb)
       - else
         = image_tag "noimage.png"
   .content__right

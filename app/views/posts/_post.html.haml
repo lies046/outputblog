@@ -14,4 +14,4 @@
       .content__right__bottom--date
         = post.created_at.strftime("%Y/%m/%d(%a) %H:%M:%S")
       %div{:id => "likes_buttons_#{post.id}"}
-        -# = render partial: 'likes/like', locals: { post: post, likes: @likes}
+        = render partial: 'likes/like', locals: { post: post, likes: @likes}

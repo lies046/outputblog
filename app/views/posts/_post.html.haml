@@ -2,7 +2,7 @@
   .content__left
     .content__left--image
       - if post.image.present?
-        = image_tag post.image_url(:thumb)
+        -# = image_tag post.image(:thumb)  #_url削除
       - else
         = image_tag "noimage.png"
   .content__right
@@ -14,4 +14,4 @@
       .content__right__bottom--date
         = post.created_at.strftime("%Y/%m/%d(%a) %H:%M:%S")
       %div{:id => "likes_buttons_#{post.id}"}
-        = render partial: 'likes/like', locals: { post: post, likes: @likes}
+        -# = render partial: 'likes/like', locals: { post: post, likes: @likes}

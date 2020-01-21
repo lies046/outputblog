@@ -4,8 +4,8 @@
   = form.text_field :title, placeholder: :タイトル, class: :form__title
   = form.text_area :content, placeholder: :ブログ本文, class: :form__text
   #img_field{:onclick => "$('#file').click()"}
-    - if @post.image.url.present?
-      = image_tag(@post.image.url)
+    - if @post.image.present? #@post.image.url削除
+      = image_tag(@post.image)#@post.image.url削除
     - else
       %i.fas.fa-camera-retro
       %i.fas.fa-plus

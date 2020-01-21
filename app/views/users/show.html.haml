@@ -1,0 +1,14 @@
+.postTitle
+  = @user.nickname
+  さんの投稿一覧
+.post__author--image
+  - if @user.image.present?
+    = image_tag @user.image_url(:thumb), class:"icon_image"
+  - else
+    = image_tag "noimage.png",class:"icon_image"
+.post__author--edit
+  - if user_signed_in? && current_user.id == @user.id
+    = link_to "マイページ編集", edit_user_registration_path,class:"mypage_edit"
+- @posts.each do |post|
+  = render partial: "posts/post", locals: { post: post }
+= paginate @posts

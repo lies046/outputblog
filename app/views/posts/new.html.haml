@@ -1,13 +1,14 @@
 .content__title
   新規記事の作成
-= form_with model:@post, class: :form, local: true do |form|
-  = form.text_field :title, placeholder: :タイトル, class: :form__title
-  = form.text_area :content, placeholder: :ブログ本文, class: :form__text
-  #img_field{:onclick => "$('#file').click()"}
-    - if @post.image.url.present? 
-      = image_tag(@post.image.url)
-    - else
-      %i.fas.fa-camera-retro
-      %i.fas.fa-plus
-  = form.file_field :image, class: "image", style: "display:none;", id: "file"
-  = form.submit '投稿する', class: :form__btn
+.post__content
+  = form_with model:@post, class: :form, local: true do |form|
+    = form.text_field :title, placeholder: :タイトル, class: :form__title
+    = form.text_area :content, placeholder: :ブログ本文, class: :form__text
+    #img_field{:onclick => "$('#file').click()"}
+      - if @post.image.url.present? 
+        = image_tag(@post.image.url)
+      - else
+        %i.fas.fa-camera-retro
+        %i.fas.fa-plus
+    = form.file_field :image, class: "image", style: "display:none;", id: "file"
+    = form.submit '投稿する', class: :form__btn

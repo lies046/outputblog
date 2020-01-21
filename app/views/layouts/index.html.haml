@@ -2,7 +2,7 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title Weeeblog
+    %title OutPut Blog
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all'
@@ -10,6 +10,6 @@
   %body
     .top-image
       .top__logo
-        %h1 weeeblog
+        %h1 OutPut Blog
         = link_to "新規登録", new_user_registration_path, class: "top__btn sign__up"
         = link_to "ログイン", new_user_session_path, class: "top__btn log__in"

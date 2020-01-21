@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Weeeblog
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+  %body
+    .top-image
+      .top__logo
+        %h1 weeeblog
+        = link_to "新規登録", new_user_registration_path, class: "top__btn sign__up"
+        = link_to "ログイン", new_user_session_path, class: "top__btn log__in"

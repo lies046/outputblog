@@ -68,4 +68,6 @@ gem 'mini_magick'
 gem 'materialize-sass', '~> 1.0.0'
 gem 'kaminari'
 gem 'font-awesome-sass'
+gem 'haml-rails'
+gem 'erb2haml'
 

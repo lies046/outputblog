@@ -2,7 +2,7 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title Weeeblog
+    %title OutPut Blog 
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all'
@@ -10,7 +10,7 @@
   %body
     %header.header
       .header__title
-        = link_to "weeeblog", posts_path, class: "header__title--text"
+        = link_to "OutPut Blog", posts_path, class: "header__title--text"
         - if flash[:notice]
           .flash
             = flash[:notice]

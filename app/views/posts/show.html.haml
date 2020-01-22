@@ -1,22 +1,23 @@
-.contents
-  .postTitle
-    = @post.title
-  .postDate
-    = @post.created_at.strftime("%Y/%m/%d(%a) %H:%M:%S")
-  .postAuthor
-  .postManage
-    - if user_signed_in? && current_user.id == @post.user_id
-      = link_to "編集", edit_post_path(@post.id), class: "postManage__edit"
-      = link_to "削除", post_path(@post.id), method: :delete, class: "postManage__delete"
-  .postText
-    = simple_format @post.content
-    .postimage
-      = image_tag @post.image_url  if @post.image.present?
+.side__bar
+.postTitle
+  = @post.title
+.postDate
+  = @post.created_at.strftime("%Y/%m/%d(%a) %H:%M:%S")
+.postAuthor
+.postManage
+  - if user_signed_in? && current_user.id == @post.user_id
+    = link_to "編集", edit_post_path(@post.id), class: "postManage__edit"
+    = link_to "削除", post_path(@post.id), method: :delete, class: "postManage__delete"
+.postText
+  = simple_format @post.content
+  .postimage
+    = image_tag @post.image_url  if @post.image.present?
 .comment__container
+  .comment__container--form
 - if current_user
-  = form_with(model: [@post, @comment], local: true) do |form|
-    = form.text_area :text, placeholder: "コメントする", rows: "2"
-    = form.submit "SEND"
+  = form_with(model: [@post, @comment], local: true, id:"new_comment") do |form|
+    = form.text_area :text, placeholder: "コメントする", rows: "2", class: "textbox"
+    = form.submit "SEND", class: "form__submit"
 - else
   %strong
     %p ※※※ コメントの投稿には新規登録/ログインが必要です ※※※

@@ -23,13 +23,13 @@ $(function(){
     })
     .done(function(data){
       var html = buildHTML(data);
-      $('.comments').prepend(html);
+      $('.comments').append(html);
       $('.textbox').val('');
       $('.form__submit').prop('disabled', false);
     })
     .fail(function(){
       alert('error');
     })
-    // $('.contents').animate({ scrollTop: $('.contents')[0].scrollHeight});
+    $('.contents').animate({ scrollTop: $('.contents')[0].scrollHeight});
   })
 })

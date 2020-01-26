@@ -1,4 +1,4 @@
-.icon_image {
+.icon-image {
   width: 100px;
   height: 100px;
   border-radius: 100px;
@@ -10,8 +10,19 @@
   }
 }
 
+.icon{
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  object-fit: cover;
+  display:block;
+  &:hover{
+  cursor: pointer;
+  }
+}
 
-.mypage_edit{
+
+.mypage-edit{
   text-decoration: none;
   color:rgb(145, 141, 141);
   font-size:18px;

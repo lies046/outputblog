@@ -1,0 +1,25 @@
+.header{
+  height: 80px;
+  width: 100%;
+  padding: 0 150px;
+  color:#9f97e9;
+  display: flex;
+  justify-content: space-between;
+  &__title{
+    font-size: 30px;
+    line-height: 60px;
+    &--text{
+      text-decoration: none;
+      color:#9f97e9;
+      margin-left:15px;
+    }
+  }
+  &__right{
+    &--btn{
+      text-decoration: none;
+      line-height: 56px;
+      color:#9f97e9;
+      margin-left:15px;
+    }
+  }
+}

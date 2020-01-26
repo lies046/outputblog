@@ -1,19 +1,19 @@
 .comment__contianer
-  .comment__container--form
-    .comments
-      %h4 List of comments
-      - if @comments
-        - @comments.each do |comment|
-          %p
-            %strong
-              = link_to comment.user.nickname + ":", "/users/#{comment.user_id}"
-            = comment.text
-  - if current_user
+  .comments
+    %h4 List of comments
+    - if @comments
+      - @comments.each do |comment|
+        %p
+          %strong
+            = link_to comment.user.nickname + ":", "/users/#{comment.user_id}"
+          = comment.text
+- if current_user
+  .comment__form
     = form_with(model: [@post, @comment], local: true, id:"new_comment") do |form|
       = form.text_area :text, placeholder: "コメントする", rows: "2", class: "textbox"
       %label
         %i.far.fa-paper-plane
         = form.submit "SEND", class: "form__submit"
-  - else
-    %strong
-      %p ※※※ コメントの投稿には新規登録/ログインが必要です ※※※
+- else
+  %strong
+    %p ※※※ コメントの投稿には新規登録/ログインが必要です ※※※

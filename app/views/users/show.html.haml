@@ -9,7 +9,7 @@
       = image_tag "noimage.png",class:"icon-image"
   .post__author--edit
     - if user_signed_in? && current_user.id == @user.id
-      = link_to "マイページ編集", edit_user_registration_path,class:"mypage-edit"
+      = link_to "アカウント編集", edit_user_registration_path,class:"mypage-edit"
   - @posts.each do |post|
     = render partial: "posts/post", locals: { post: post }
   = paginate @posts

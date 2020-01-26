@@ -1,0 +1,35 @@
+.comment__contianer{
+  margin: 30px auto 0;
+  background-color:rgb(252, 252, 252);
+  height: 300px;
+  width: 70%;
+  overflow: scroll;
+  h4{
+    text-align: center;
+  }
+  p{
+    margin:10px 200px;
+    border-bottom:1px ridge;
+  }
+}
+
+#comment_text{
+  width:90%;
+  margin-left:10px;
+}
+
+.form__submit{
+  display: none;
+}
+
+.far.fa-paper-plane{
+  font-size:40px;
+  margin-left: 15px;
+  color:#9f97e9;
+}
+
+.comment__form{
+  margin:0 auto;
+  background-color:rgb(252, 252, 252);
+  width: 70%;
+}

@@ -2,8 +2,7 @@ $(function(){
   function buildHTML(comment){
     var html = `<p>
                   <strong>
-                    <a href=/users/${comment.user_id}>${comment.user_name}</a>
-                    ：
+                    <a href=/users/${comment.user_id}>${comment.user_name}:</a>
                   </strong>
                   ${comment.text}
                 </p>`
@@ -30,6 +29,6 @@ $(function(){
     .fail(function(){
       alert('error');
     })
-    $('.contents').animate({ scrollTop: $('.contents')[0].scrollHeight});
+    $('.comment__contianer').animate({ scrollTop: $('.comment__contianer')[0].scrollHeight});
   })
 })

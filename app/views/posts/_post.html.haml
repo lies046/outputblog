@@ -2,9 +2,9 @@
   .content__left
     .content__left--image
       - if post.image.present?
-        = image_tag post.image.url(:thumb)
+        =link_to image_tag(post.image.url(:thumb)), post_path(post.id)
       - else
-        = image_tag "noimage.png",:size =>'80x80'
+        =link_to image_tag("noimage.png",:size =>'80x80'), post_path(post.id)
   .content__right
     .content__right__top
       = link_to post.title, post_path(post.id), class: "content__right__top--title"

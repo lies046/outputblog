@@ -1,0 +1,14 @@
+.form__btn {
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  background: #9f97e9;
+  color: #FFF;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 5px #9f97e9;
+  border: dashed 1px #FFF;
+}
+
+.form__btn:hover {
+  border: dotted 1px #FFF;
+}

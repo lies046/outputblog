@@ -9,11 +9,11 @@ $(function() {
   });
 
   $(function() {
-    $('.icon_image').hover(
+    $('.icon-image').hover(
       function(){
-      $('.mypage_edit').fadeIn();
+      $('.mypage-edit').fadeIn();
       },
       function(){
-        $('.mypage_edit').fadeOut(2000);
+        $('.mypage-edit').fadeOut(2000);
       });
     });

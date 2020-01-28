@@ -29,7 +29,7 @@
     display: block;
     border-radius: 5px;
     color: #ffffff;
-    background-color:#9f97e9;
+    background-color: $maincolor;
     padding: 0 10px;
     text-decoration: none;
     margin-right: 10px;
@@ -38,7 +38,7 @@
     display: block;
     border-radius: 5px;
     color: #ffffff;
-    background-color:#9f97e9;
+    background-color: $maincolor;
     padding: 0 10px;
     text-decoration: none;
     margin-left: 10px;
@@ -90,7 +90,7 @@ label{
 
 #img_field {
   font-size: 15px;
-  border: solid 1px #9f97e9;
+  border: solid 1px  $maincolor;
   color: #666;
   position: relative;
   border-radius: 5px;
@@ -125,7 +125,7 @@ label{
 }
  
 #img_field:hover {
-  background-color:#9f97e9;
+  background-color: $maincolor;
   transition: 0.3s ease-out;
   opacity: 0.9;
 }
@@ -137,7 +137,7 @@ label{
 }
 
 .pagination{
-  background-color:#9f97e9;
+  background-color: $maincolor;
   opacity:0.6;
   width:70%;
   margin:0 auto;

@@ -3,7 +3,12 @@
     新規記事の作成
   .post-text
     = form_with model:@post, class: :form, local: true do |form|
-      = form.text_field :title, placeholder: :タイトル, class: :form__title
+      - if @post.errors.any?
+        #error_explanation.alert.alert-danger
+        %ul
+          - @post.errors.full_messages.each do |message|
+            %li= message
+      = form.text_field :title, placeholder: :タイトル30文字以内,class: :form__title
       = form.text_area :content, placeholder: :ブログ本文, class: :form__text
       #img_field{:onclick => "$('#file').click()"}
         - if @post.image.url.present? 

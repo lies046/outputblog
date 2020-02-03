@@ -154,7 +154,15 @@ label{
   border:1px solid #ccc;
   }
   &--text{
-    padding: 15px 25px;
+    padding: 0 20px;
+    color:$maincolor;
+    &-title{
+      padding: 0 0 0 40px;
+    }
+    &-date{
+      text-align: right;
+      padding:0 20px 0 0;
+    }
   }
   &--img{
   position: relative;

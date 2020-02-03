@@ -10,12 +10,11 @@ class PostsController < ApplicationController
   end
 
   def create
-  @post = Post.new(post_params)
+    @post = Post.new(post_params)
     if @post.save
       redirect_to posts_path
     else
-      flash.now[:alert] = 'メッセージを入力してください。'
-      redirect_to("/posts/new")
+      render :new
     end
  end
 
@@ -34,8 +33,7 @@ class PostsController < ApplicationController
     post.update(post_params)
     
     if post.save
-      redirect_to posts_path(post.id)
-     
+      redirect_to posts_path(post.id)  
     else
       redirect_to("/posts/#{post.id}/edit")
     end

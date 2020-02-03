@@ -10,7 +10,7 @@
 - if current_user
   .comment__form
     = form_with(model: [@post, @comment], local: true, id:"new_comment") do |form|
-      = form.text_area :text, placeholder: "コメントする", rows: "2", class: "textbox"
+      = form.text_area :text, placeholder: "コメントをする(3文字以上20文字以内)", rows: "2", class: "textbox"
       %label
         %i.far.fa-paper-plane
         = form.submit "SEND", class: "form__submit"

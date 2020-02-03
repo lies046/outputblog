@@ -25,10 +25,11 @@ $(function(){
       $('.comments').append(html);
       $('.textbox').val('');
       $('.form__submit').prop('disabled', false);
+      $('.comment__contianer').animate({ scrollTop: $('.comment__contianer')[0].scrollHeight});
     })
     .fail(function(){
-      alert('error');
-    })
-    $('.comment__contianer').animate({ scrollTop: $('.comment__contianer')[0].scrollHeight});
-  })
+      alert('コメントを3文字以上20文字以内で入力してください');
+    });
+    return false;
+  });
 })

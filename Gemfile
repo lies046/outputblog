@@ -82,4 +82,5 @@ gem 'erb2haml'
 gem 'fog-aws'
 gem 'pry-rails'
 gem 'rails-i18n'
+gem 'devise-i18n-views'
 

@@ -1,7 +1,6 @@
 .contents
   .post__contents--title
-    = @user.nickname
-    さんの投稿一覧
+    = "#{@user.nickname}'s Post List"
   .post__author--image
     - if @user.image.present?
       = image_tag @user.image_url(:thumb), class:"icon-image"
@@ -9,7 +8,7 @@
       = image_tag "noimage.png",class:"icon-image"
   .post__author--edit
     - if user_signed_in? && current_user.id == @user.id
-      = link_to "アカウント編集", edit_user_registration_path,class:"mypage-edit"
+      = link_to "Edit account", edit_user_registration_path,class:"mypage-edit"
   - @posts.each do |post|
     = render partial: "posts/post", locals: { post: post }
 = paginate @posts

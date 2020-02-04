@@ -6,8 +6,8 @@
   .post__contents--author
   .post__contents--manage
     - if user_signed_in? && current_user.id == @post.user_id
-      = link_to "編集", edit_post_path(@post.id),class: "post__contents--manage-edit"
-      = link_to "削除", post_path(@post.id), method: :delete, data: { confirm: "「#{@post.title}」を削除します。よろしいですか？" }, class: "post__contents--manage-delete"
+      = link_to "Edit", edit_post_path(@post.id),class: "post__contents--manage-edit"
+      = link_to "Delete", post_path(@post.id), method: :delete, data: { confirm: "「#{@post.title}」を削除します。よろしいですか？" }, class: "post__contents--manage-delete"
   .post__contents--text
     = simple_format @post.content
     .post__contents--image

@@ -1,8 +1,0 @@
-ja:
-  activerecord:
-    models:
-      post:
-    attributes:
-      post:
-        title: タイトル
-        content: 本文

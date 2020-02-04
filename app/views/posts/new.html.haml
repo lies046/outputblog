@@ -1,11 +1,11 @@
 .contents
   .content__title
-    新規記事の作成
+    Create new article
   .post-text
     = form_with model:@post, class: :form, local: true do |f|
       = render 'layouts/error_messages',model: f.object
-      = f.text_field :title, placeholder: :タイトル30文字以内,class: :form__title
-      = f.text_area :content, placeholder: :ブログ本文, class: :form__text
+      = f.text_field :title, placeholder:"Title within 30 characters",class: :form__title
+      = f.text_area :content, placeholder:"Text", class: :form__text
       #img_field{:onclick => "$('#file').click()"}
         - if @post.image.url.present? 
           = image_tag(@post.image.url)
@@ -13,4 +13,4 @@
           %i.fas.fa-camera-retro
           %i.fas.fa-plus
       = f.file_field :image, class: "image", style: "display:none;", id: "file"
-      = f.submit '投稿する', class: "form__btn"
+      = f.submit 'Post', class: "form__btn"

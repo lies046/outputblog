@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :move_to_index
+  before_action :move_to_index, except: [:index, :show]
   
   def index
     @posts = Post.includes(:user).order("created_at DESC").page(params[:page]).per(8)
@@ -51,6 +51,6 @@ class PostsController < ApplicationController
   end
   
   def move_to_index
-    redirect_to root_path unless user_signed_in?
+    redirect_to posts_path unless user_signed_in?
   end
 end

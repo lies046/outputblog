@@ -1,19 +1,9 @@
 $(function() {
-  $('.top__logo h1').hover(
+  $('.icon-image').hover(
     function(){
-    $('.top__btn').fadeIn(3000);
+    $('.mypage-edit').fadeIn();
     },
     function(){
-      $('.top__btn').fadeOut(3000);
+      $('.mypage-edit').fadeOut(2000);
     });
   });
-
-  $(function() {
-    $('.icon-image').hover(
-      function(){
-      $('.mypage-edit').fadeIn();
-      },
-      function(){
-        $('.mypage-edit').fadeOut(2000);
-      });
-    });

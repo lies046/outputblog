@@ -1,24 +1,20 @@
 # README
 
-## 1.アプリケーションの概要
+## 1.OutPutBlogの概要
 - コメント、いいね機能、画像投稿ができるブログアプリです。
-<img width="1440" alt="スクリーンショット 2020-02-05 14 44 54" src="https://user-images.githubusercontent.com/57931839/73814372-326a3600-4826-11ea-821d-a3ffa56300f8.png">
-
 ## 2.アプリケーション機能一覧
+- index
+<img width="1440" alt="スクリーンショット 2020-02-05 14 44 54" src="https://user-images.githubusercontent.com/57931839/73814372-326a3600-4826-11ea-821d-a3ffa56300f8.png">
 - 記事投稿,編集,削除
 - ユーザー登録、編集(アカウント名、Emailアドレス、アイコン画像、パスワード)
 - 記事に対してのコメント機能(ajax使用)
+![e750b87d5bbeba4f4c35f52a45f92429](https://user-images.githubusercontent.com/57931839/73815562-af4adf00-4829-11ea-8c13-7163368a8f20.gif)
 - いいね機能(ajax使用)
+![0a519dd04a1c2d5c7fd7fdc666015ded](https://user-images.githubusercontent.com/57931839/73815657-f46f1100-4829-11ea-81b2-4b9882d5f1a2.gif)
 - ページネーション
 
 ## 3.使用している技術一覧
-- ruby 2.5.1
-- Rails 5.2.4.1
-- jQuery
-- haml
-- scss
-- aws
-- S3
+- 上記一覧です。
 
 ![ERD](https://user-images.githubusercontent.com/57931839/73133491-a9f0d600-406c-11ea-9d7f-a2d93de3fbaa.jpeg)
 

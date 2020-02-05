@@ -4,24 +4,25 @@
 - コメント、いいね機能、画像投稿ができるブログアプリです。
 - URL http://3.115.40.134
 - for viewingよりご覧いただけますが、全機能を使うためにはログインが必要です。  
-  機能を確認したい場合は下記のアカウントでログインをお願いいたします。  
+  機能を確認したい場合は、お手数ですが下記のアカウントでログインをお願いいたします。  
   TEST用アカウント  
   Email: ironman@gmail.com  
   Password: 111111  
 
 ## 2.アプリケーション機能一覧
-- index
-<img width="1440" alt="スクリーンショット 2020-02-05 14 44 54" src="https://user-images.githubusercontent.com/57931839/73814372-326a3600-4826-11ea-821d-a3ffa56300f8.png">
-
 - 記事投稿,編集,削除
 - ユーザー登録、編集(アカウント名、Emailアドレス、アイコン画像、パスワード)
+- ユーザー別投稿一覧ページ
 - 記事に対してのコメント機能(ajax使用)
 - いいね機能(ajax使用)
 - ページネーション
 
-## 3.使用している技術一覧
-- 上記一覧です。
+## 3.使用技術一覧
+- index画面
+<img width="1440" alt="スクリーンショット 2020-02-05 14 44 54" src="https://user-images.githubusercontent.com/57931839/73814372-326a3600-4826-11ea-821d-a3ffa56300f8.png">
 
+## 4.DB設計
+- ER図
 ![ERD](https://user-images.githubusercontent.com/57931839/73133491-a9f0d600-406c-11ea-9d7f-a2d93de3fbaa.jpeg)
 
 ## usersテーブル

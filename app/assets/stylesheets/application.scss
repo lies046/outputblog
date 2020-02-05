@@ -11,9 +11,10 @@
 @import 'comments';
 @import 'shared/btn';
 @import 'shared/contents';
+@import 'shared/flash';
 
 nav a{
-  color:black;
+  color:$black;
 }
 
 

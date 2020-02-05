@@ -12,13 +12,13 @@
         %span.grey-text.text-darken-2
           = post.likes_count
 - else
-  - if post.likes_count
-    .vertical_like
-      %i.fas.fa-heart
-      %span.red-text
-        = post.likes_count
-  - else
+  - if post.likes_count.to_i.zero?
     .vertical_like
       %i.far.fa-heart
       %span.grey-text.text-darken-2
+        = post.likes_count
+  - else
+    .vertical_like
+      %i.fas.fa-heart
+      %span.red-text
         = post.likes_count

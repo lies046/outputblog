@@ -3,12 +3,12 @@
 ## 1.OutPutBlogの概要
 - コメント、いいね機能、画像投稿ができるブログアプリです。
 - URL http://3.115.40.134
-- for viewingよりご覧いただけますが、全機能を使うためにはログインが必要です。
-  機能を確認したい場合は下記のアカウントでログインをお願いいたします。
-  TEST用アカウント
-  Email: ironman@gmail.com
-  Password: 111111
-  
+- for viewingよりご覧いただけますが、全機能を使うためにはログインが必要です。  
+  機能を確認したい場合は下記のアカウントでログインをお願いいたします。  
+  TEST用アカウント  
+  Email: ironman@gmail.com  
+  Password: 111111  
+
 ## 2.アプリケーション機能一覧
 - index
 <img width="1440" alt="スクリーンショット 2020-02-05 14 44 54" src="https://user-images.githubusercontent.com/57931839/73814372-326a3600-4826-11ea-821d-a3ffa56300f8.png">

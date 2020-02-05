@@ -8,9 +8,7 @@
 - 記事投稿,編集,削除
 - ユーザー登録、編集(アカウント名、Emailアドレス、アイコン画像、パスワード)
 - 記事に対してのコメント機能(ajax使用)
-![result](https://user-images.githubusercontent.com/57931839/73815562-af4adf00-4829-11ea-8c13-7163368a8f20.gif)
 - いいね機能(ajax使用)
-![result](https://user-images.githubusercontent.com/57931839/73815657-f46f1100-4829-11ea-81b2-4b9882d5f1a2.gif)
 - ページネーション
 
 ## 3.使用している技術一覧

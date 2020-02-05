@@ -16,8 +16,9 @@
 - ページネーション
 
 ## 3.使用技術一覧
-- index画面及び使用技術一覧
+- OutPutBlog index画面及び使用技術一覧
 <img width="1440" alt="スクリーンショット 2020-02-05 16 03 12" src="https://user-images.githubusercontent.com/57931839/73818622-1324d600-4831-11ea-9dcb-4130e5f12372.png">
+
 - デプロイ方法  
   capistranoを使用した自動デプロイ  
   画像保存先S3

@@ -152,21 +152,24 @@ label{
   &--item{
   width: 100%;
   border:1px solid #ccc;
+  justify-content: space-between;
   }
   &--text{
     padding: 0 20px;
+    a{
     color:$maincolor;
+    }
     &-title{
-      padding: 0 20px 0;
+      padding: 0 25px 0;
+      a{
+        color:black;
+      }
     }
     &-date{
       text-align: right;
       padding:0 20px 0 0;
     }
   }
-  &--img{
-  position: relative;
-
   h3{
     position: absolute;
     bottom: 15px;
@@ -174,12 +177,11 @@ label{
     font-size: 20px;
   }
   } 
-}
 
 .card__image{
   border-bottom:1px solid #ccc;
   width: 100%;
-  height: 180px;
+  height: 250px;
 }
 
 .card__section{

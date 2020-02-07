@@ -4,14 +4,15 @@
   .header__right
     - if user_signed_in?
       %label.header-label
-        %i.fas.fa-user
-        = link_to "Mypage", user_path(current_user), class:"header__right--btn"
+        = link_to user_path(current_user), class:"header__right--btn" do
+          %i.fas.fa-user 
       %label.header-label
-        %i.fas.fa-pencil-alt
-        = link_to "New Post", new_post_path, class:"header__title--text"
+        = link_to new_post_path, class:"header__right--btn" do
+          %i.fas.fa-pencil-alt
       %label.header-label
+      = link_to  destroy_user_session_path, method: :delete, class: "header__right--btn" do
         %i.fas.fa-sign-out-alt
-        = link_to "Signout", destroy_user_session_path, method: :delete, class: "header__right--btn"
+        
     - else
       = link_to "Signup", new_user_registration_path, class: "header__right--btn"
       = link_to "Signin", new_user_session_path, class: "header__right--btn"

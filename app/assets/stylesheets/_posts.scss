@@ -1,3 +1,145 @@
+@media screen and (max-width:480px){
+  .post__contents{
+    margin: 30px auto 0;
+    width: 100%;
+    overflow: scroll;
+  
+    &--title{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    }
+    &--date{
+      font-size: 15px;
+      color: #999;
+      text-align: center;
+    }
+    &--author{
+    font-size: 15px;
+    color: #999;
+    text-align: center;
+    }
+    &--manage{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    &-edit{
+      display: block;
+      border-radius: 5px;
+      color: #ffffff;
+      background-color: $maincolor;
+      padding: 0 10px;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+    &-delete{
+      display: block;
+      border-radius: 5px;
+      color: #ffffff;
+      background-color: $maincolor;
+      padding: 0 10px;
+      text-decoration: none;
+      margin-left: 10px;
+      }
+    }
+    &--text{
+      margin: 20px 30px;
+    }
+    &--image{
+      margin: 20px 30px;
+    }
+  }
+  
+  .post-text{
+    height:100%;
+    width:100%;
+    margin:0 auto;
+  }
+  .form {
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    &__text{
+      display: inline-block;
+      width: 50%;
+      height: 50%;
+      margin-top: 15px;
+    }
+    &__btn{
+      display: block;
+      width: 30%;
+      margin: 15px auto 0;
+    }
+    &__title{
+      width:100%;
+    }
+  }
+  
+  label{
+    cursor: pointer;
+    font-size:1.5em;
+    }
+  
+  #img_prev{
+    width:126px;
+    height:224px;
+  }
+  
+  #img_field {
+    font-size: 15px;
+    border: solid 1px  $maincolor;
+    color: #666;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 400px;
+    height: 285px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #fff;
+    overflow: scroll;
+    box-sizing: border-box;
+    transition: 0.3s ease-out;
+    display: inline-block; 
+    margin-left:20px;
+  }
+   
+  #img_field i {
+    font-size: 100px;
+    color: #aaa;
+    line-height: 250px;
+    transition: 0.3s ease-out;
+    margin-left:150px;
+  }
+   
+  .fas.fa-plus {
+    display: none;
+    font-size: 50px;
+    position: absolute;
+    top: -60px;
+    right: 15px;
+  }
+   
+  #img_field:hover {
+    background-color: $maincolor;
+    transition: 0.3s ease-out;
+    opacity: 0.9;
+  }
+   
+  #img_field:hover i {
+    transition: 0.3s ease-out;
+    display: block;
+    color: #fff;
+  }
+
+
+}
+
+@media screen and (min-width:481px) {
+
 .post__contents{
   margin: 30px auto 0;
   background-color:rgb(252, 252, 252);
@@ -136,6 +278,8 @@ label{
   color: #fff;
 }
 
+}
+
 .pagination{
   background-color:#f6f6f6;
   opacity:0.6;
@@ -179,7 +323,7 @@ label{
       font-size: 20px;
       }
     } 
-    
+
   .card__image{
     border-bottom:1px solid #ccc;
     width: 100%;

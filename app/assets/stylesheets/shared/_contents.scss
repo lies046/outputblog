@@ -1,9 +1,75 @@
+@media screen and (max-width:480px){
+  .contents{
+    margin: 30px auto 0;
+    background-color:rgb(252, 252, 252);
+    width: 100%;
+    .content{
+      margin: 10px;
+      padding: 25px;
+      border-bottom: 1px solid #f6f6f6;
+      display: flex;
+      height:107px;
+      
+      &__left{
+        padding-right: 20px;
+        &--image{
+          height: 82px;
+          width: 82px;
+          border: solid 1px;
+        }
+      }
+      &__right{
+        width: calc(100%-100px);
+        &__top{
+          font-size: 20px;
+          font-weight: bold;
+          &--title{
+            text-decoration: none;
+            color: #000000;
+          }
+        }
+        &__bottom{
+          font-size: 15px;
+          color: #999;
+          display: flex;
+          &--userName{
+            &--btn{
+              text-decoration: none;
+              color: $maincolor;
+            }
+          }
+          &--date{
+            margin-left: 20px;
+          }
+        }
+      }
+      &__title{
+        font-size: 30px;
+        font-weight: bold;
+        padding-top: 30px;
+        text-align: center;
+      }
+    }
+  }
+  
+  .field_with_errors {
+    display: contents;
+    // もしくは diplay: inline;
+  }
+  
+  .alert{
+    color:red;
+  }
+
+}
+
+
+
 @media screen and (min-width:481px) {
 
 body{
   background-color: #f6f6f6;
   min-width: 650px;
-}
 }
 .contents{
   margin: 30px auto 0;
@@ -67,4 +133,5 @@ body{
 
 .alert{
   color:red;
+}
 }

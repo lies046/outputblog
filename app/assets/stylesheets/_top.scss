@@ -1,4 +1,55 @@
+@media screen and (max-width:480px){
+  .signup {
+    background-color: #239b76;
+    text-decoration: none;
+  }
+  
+  .login{
+    background-color:#7e1083;
+    text-decoration: none;
+  }
+  
+  .forviewing{
+    background-color:#5bbee5;
+  }
+  
+  .top__btn {
+    padding: 8px 40px;
+    color: $white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size:30px;
+  }
+  
+  .top-image{
+    background-image: image-url(sora);
+    background-size: cover;
+    width:100%;
+    height:100vh;
+    padding: 180px 0 100px 0;
+    position: relative;
+  }
+  
+  .top__logo {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    h1{
+    font-size:100px;
+    letter-spacing:20px;
+    color:#4735eb;
+    }
+  }
+  }
 
+
+@media screen and (min-width:481px) {
 .signup {
   background-color: #239b76;
   text-decoration: none;
@@ -45,3 +96,7 @@
   color:#4735eb;
   }
 }
+}
+
+
+  

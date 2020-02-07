@@ -12,3 +12,16 @@
 .form__btn:hover {
   border: dotted 1px #FFF;
 }
+
+.submit-btn{
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  background:  $maincolor;
+  color: #FFF;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 5px  $maincolor;
+  border: dashed 1px #FFF;
+  margin:10px;
+
+}

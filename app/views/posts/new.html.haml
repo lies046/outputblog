@@ -13,4 +13,5 @@
           %i.fas.fa-camera-retro
           %i.fas.fa-plus
       = f.file_field :image, class: "image", style: "display:none;", id: "file"
+      = f.text_field :youtube_url, placeholder:"youtube url",class: :form__title
       = f.submit 'Post', class: "form__btn"

@@ -1,4 +1,11 @@
 @media screen and (max-width:559px){
+  img{
+    width: 100%;
+  }
+
+  iframe{
+    width:100%;
+  }
 
   .post__contents{
     margin: 30px auto 0;
@@ -138,6 +145,7 @@
 }
 
 @media screen and (min-width:560px) {
+
 
 .post__contents{
   margin: 30px auto 0;

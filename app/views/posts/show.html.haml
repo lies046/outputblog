@@ -12,5 +12,9 @@
     = simple_format @post.content
     .post__contents--image
       = image_tag @post.image_url  if @post.image.present?
+    .post__contents--image
+      - if @post.youtube_url.present?
+        %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/#{@post.youtube_url}", :width => "560"}
+
 
 =render 'comments/show'

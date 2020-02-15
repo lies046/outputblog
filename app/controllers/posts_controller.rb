@@ -11,6 +11,9 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
+    url = params[:post][:youtube_url]
+    url = url.last(11)
+    @post.youtube_url = url
     if @post.save
       redirect_to posts_path
     else
@@ -47,7 +50,7 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:title, :content, :image).merge(user_id: current_user.id)
+    params.require(:post).permit(:title, :content, :image, :youtube_url).merge(user_id: current_user.id)
   end
   
   def move_to_index

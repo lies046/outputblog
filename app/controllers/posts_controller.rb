@@ -34,7 +34,9 @@ class PostsController < ApplicationController
   def update
     post = Post.find(params[:id])
     post.update(post_params)
-    
+    url = params[:post][:youtube_url]
+    url = url.last(11)
+    post.youtube_url = url
     if post.save
       redirect_to posts_path(post.id)  
     else

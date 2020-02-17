@@ -12,7 +12,8 @@
   .top
     .top-image
       .top__logo
-        %h1 OutPut Blog
+        .top__logo--image
+          = image_tag("logo1.png", width: '500')
         = link_to "Singup", new_user_registration_path, class: "top__btn signup"
         = link_to "Singin", new_user_session_path, class: "top__btn login"
         = link_to "for viewing", posts_path,class: "top__btn forviewing"

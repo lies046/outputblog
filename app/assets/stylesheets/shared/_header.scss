@@ -4,7 +4,7 @@
   }
   .header{
     height: 80px;
-    width: 80%;
+    width: 70%;
     color: $maincolor;
     display: flex;
     justify-content: space-between;
@@ -12,17 +12,15 @@
     &__title{
       font-size: 30px;
       line-height: 60px;
-      &--text{
-        text-decoration: none;
-        color: $maincolor;
-      }
+      width:150px;
     }
     &__right{
+      margin:10px 0 0;
       &--btn{
         text-decoration: none;
         line-height: 56px;
         color: $maincolor;
-        margin:0 10px;
+        margin:10px;
       }
     }
   }

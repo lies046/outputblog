@@ -1,6 +1,6 @@
 .header
   .header__title
-    = link_to "OutPut Blog", posts_path, class: "header__title--text"
+    = link_to image_tag("logo.png", width:'200'), posts_path
   .header__right
     - if user_signed_in?
       %label.header-label

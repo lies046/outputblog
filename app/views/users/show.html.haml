@@ -1,14 +1,33 @@
+
+.post__contents--title
+  = "#{@user.nickname}'s Post List"
+.post__author--image
+  - if @user.image.present?
+    = image_tag @user.image_url(:thumb), class:"icon-image"
+  - else
+    = image_tag "noimage.png",class:"icon-image"
+.post__author--edit
+  - if user_signed_in? && current_user.id == @user.id
+    = link_to "Edit account", edit_user_registration_path,class:"mypage-edit"
 .contents
-  .post__contents--title
-    = "#{@user.nickname}'s Post List"
-  .post__author--image
-    - if @user.image.present?
-      = image_tag @user.image_url(:thumb), class:"icon-image"
-    - else
-      = image_tag "noimage.png",class:"icon-image"
-  .post__author--edit
-    - if user_signed_in? && current_user.id == @user.id
-      = link_to "Edit account", edit_user_registration_path,class:"mypage-edit"
-  - @posts.each do |post|
-    = render partial: "posts/post", locals: { post: post }
-= paginate @posts
+  .tab
+  - if user_signed_in? && current_user.id == @user.id
+    %ul#tab_menu
+      %li.show 投稿一覧
+      %li いいね済み記事
+    #border
+      %div
+    %ul#tab_content
+      %li.show
+        - @posts.each do |post|
+          = render partial: "posts/post", locals: { post: post }
+        = paginate @posts
+      %li
+        - @likes.each do |like|
+          - post = Post.find_by(id: like.post_id)
+          = render partial: "posts/post", locals: { post: post }
+        = paginate @likes
+  - else
+    - @posts.each do |post|
+      = render partial: "posts/post", locals: { post: post }
+    = paginate @posts

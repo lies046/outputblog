@@ -87,4 +87,4 @@ gem 'fog-aws'
 gem 'pry-rails'
 gem 'rails-i18n'
 gem 'devise-i18n-views'
-
+gem "nokogiri", ">= 1.10.8"
